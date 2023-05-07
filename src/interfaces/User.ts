@@ -24,4 +24,10 @@ interface UserLogin {
   password: string;
 }
 
-export { User, UserOutput, UserLogin };
+interface UserIdWithToken {
+  id: string;
+  token: string;
+  isAdmin: boolean;
+}
+
+export { User, UserOutput, UserLogin, UserIdWithToken };
